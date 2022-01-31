@@ -31,7 +31,7 @@
 
         #logo {
             float: left;
-            width: 30%;
+            width: 50%;
             display: block;
             margin: 5px 20px;
             color: rgb(75, 23, 23);
@@ -73,6 +73,14 @@
             display: none;
         }
 
+        .slider>img {
+            height: 900px;
+            width: 100%;
+            /* Fits the content of image to given
+            width and height */
+            object-fit: cover;
+        }
+
         .next {
             display: inline-block;
             max-width: 80px;
@@ -99,27 +107,33 @@
     </div>
     <div id="main">
         <div id="mainContent">
-            <p>I'm from northern virginia and i like cats. This is my cat, Bingo! </p>
+            <p> About me: I'm from northern virginia, about 30 mins from DC. Prior to OU, I had never been to Ohio before. I love cats, and have one myself. This is my cat, Bingo! </p>
+            
+            <div class="slider">
+                <img id="image" src="img4.jpg" />
+            </div>
 
             <!--Overlay example -->
             <div id="overlay"></div>
-            <button id="myButton">Click for Meme</button>
+            <button id="myButton">This button is lie</button>
             <!--Overlay example end -->
 
           
         </div>
+
         <div id="mainContent2">
             <p>I like internet memes and humor, it brings me serotonin. I'm also in the Marching 110, I've included a photo of my shining moment during a game (lol)
             </p>
             
             <div class="slider">
-                <img id="image" src="img1.jpg" />
+                <img id="image" src="img3.jpg" />
             </div>
             
             <div id="buttons">
                 <div class="next" onclick="nextImage()">Next</div>
             </div>
         </div>
+
         <div id="mainContent3">
             <p>I love video games. I grew up playing nintendo and wii, and now 
                 play mostly on PC and switch. Here's a ranking of my favorite games 
@@ -193,7 +207,7 @@
     })
 
     // Declare global variable and assign an array, consisting of image names
-    var imagesArray = ["img1.jpg", "img2.png", "img3.jpg", "skyrim.jpg"];
+    var imagesArray = ["img1.jpg", "img2.png", "img3.jpg", "skyrim.jpg", "img5.jpg", "img6.png"];
     // Declare variable and make it equal to image element
     var image = document.getElementById('image');
     // Create imageIndex and assign 0;
