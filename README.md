@@ -1,6 +1,4 @@
 # ECT4900
-class
-help i don't know what im doing
-???
+ah shit
 
-lets try this again
+here we go again
